@@ -186,7 +186,7 @@ nav ul li a{
     position: absolute;
     left: 12%;
     /* Center the image */
-    top: 38%;
+    top: 48%;
     margin: 4rem 0rem;
     animation: upDown 1s ease-in-out 1;
 }
