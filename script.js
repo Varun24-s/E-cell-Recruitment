@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (card.classList.contains("open")) {
                 toggleButton.src = "Assets/Icon.png"; 
             } else {
-                toggleButton.src = "plus.png"; 
+                toggleButton.src = "Assets/plus.png"; 
             }
         });
     });
