@@ -285,12 +285,12 @@ nav ul li a{
 
 .bluebox {
     position: absolute;
-    width: 45rem;
-    height: 35rem;
+    width: 30rem;
+    height: 22rem;
     background-color: #1E5AFA;
     border-radius: 2rem;
     bottom: 23%;
-    left: 32%;
+    left: 28%;
     z-index: -1;
 }
 
