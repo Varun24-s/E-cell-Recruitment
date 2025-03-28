@@ -771,37 +771,38 @@ footer ul li {
     nav ul.active {
         display: flex;
     }
+    .heroimage {
+        margin-top: 4rem;
+    }
+    
+    .heroimage img {
+        scale: 0.8;
+    }
+    
+    .scrolldown {
+        display: none;
+    }
+    
+    .downloadbuttons {
+        padding-top: 13rem;
+    }
+    
+    .aboutushead {
+        padding: 2rem;
+    }
+    
+    .bluebox {
+        width: 26.25rem;
+        height: 15rem;
+    }
+    
+    .logocontainer {
+        margin: 0rem auto;
+        gap: 0;
+    }
+    
 }
 
-.heroimage {
-    margin-top: 4rem;
-}
-
-.heroimage img {
-    scale: 0.8;
-}
-
-.scrolldown {
-    display: none;
-}
-
-.downloadbuttons {
-    padding-top: 13rem;
-}
-
-.aboutushead {
-    padding: 2rem;
-}
-
-.bluebox {
-    width: 26.25rem;
-    height: 15rem;
-}
-
-.logocontainer {
-    margin: 0rem auto;
-    gap: 0;
-}
 
 /* footer {
     grid-template-columns: repeat(2,1fr);
@@ -993,7 +994,7 @@ footer ul li {
         grid-template-columns: 1.5fr 1fr;
     }
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
     html {
         font-size: 1rem;
     }
