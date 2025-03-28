@@ -466,10 +466,13 @@ nav ul li a{
     font-style: italic;
     font-size: 1rem;
     animation: fadeIn 0.3s ease-in-out;
+    height: 6rem;
+    padding-top: 1.5rem;
 }
 
 .faqcard.open .answer {
     display: block;
+    align-items: center;
 }
 
 .faqcard.open .question {
