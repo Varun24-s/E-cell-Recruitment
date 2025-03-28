@@ -1,0 +1,1154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.noscroll {
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5.6rem;
+    line-height: 1;
+    color: #000F37;
+
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.para {
+    width: 65%;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 1.5rem auto 3rem;
+}
+
+a {
+    color: #FAFAFA;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+.tasveer {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 47.5rem;
+    background-color: #1E5AFA;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #FAFAFA;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    height: 3.625rem;
+    top: 1.875rem;
+    border-radius: 0.3125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+}
+
+.ellipse753 {
+    position: absolute;
+    top: 0%;
+    right: -0.25%;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 300;
+    margin: 0.8125rem;
+    gap: 1.25rem;
+    position: absolute;
+    left: 8.5%;
+    top: -15%;
+}
+
+nav ul li {
+    padding-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.buttons {
+    position: absolute;
+    left: 80%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    margin: -56px;
+    cursor: pointer;
+}
+
+.login {
+    font-weight: 400;
+    font-size: 17px;
+    background: none;
+    cursor: pointer;
+}
+
+.login:hover {
+    color: #011037;
+}
+
+.signup {
+    font-weight: 500;
+    color: #011037;
+    background-color: #FAFAFA;
+    font-size: 18px;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup:hover {
+    background: none;
+    border: 2px solid #FAFAFA;
+}
+
+.btn {
+    display: none;
+}
+
+.boldhero h1 {
+    display: flex;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 25.5%;
+    top: 18%;
+    font-weight: 800;
+    color: #FAFAFA;
+}
+
+.texthero {
+    text-align: center;
+    width: 75%;
+    position: absolute;
+    left: 15.5%;
+    top: 45%;
+}
+
+.heroimage {
+    width: 80%;
+    max-width: 100%;
+    /* Prevent overflow */
+    height: auto;
+    /* Maintain aspect ratio */
+    position: absolute;
+    left: 12%;
+    /* Center the image */
+    top: 38%;
+    margin: 4rem 0rem;
+    animation: upDown 1s ease-in-out 1;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 9%;
+    left: 3.5%;
+    gap: 40px;
+}
+
+.downloadbuttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 30rem;
+    margin-bottom: 4rem;
+}
+
+.downloadbuttons a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    font-weight: 400;
+    background-color: black;
+    text-decoration: none;
+    color: #FAFAFA;
+    padding: 10px 15px;
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.downloadbuttons a:hover {
+    transform: scale(1.05);
+}
+
+.buttonimage img {
+    width: 40px;
+    /* Adjust image size */
+    height: auto;
+}
+
+
+.bgdeco {
+    position: absolute;
+    top: 115%;
+    left: 51%;
+    z-index: -1;
+}
+
+.sddeco {
+    position: absolute;
+    top: 102%;
+    right: 2%;
+}
+
+.sdimage {
+    position: absolute;
+    top: 105%;
+    right: 0%;
+}
+
+.aboutUs {
+    overflow-x: auto;
+}
+
+.aboutushead {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 6rem;
+    margin: auto;
+    color: #313131;
+    font-weight: 700;
+    font-size: 85px;
+}
+
+.aboutimage {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.aboutimage.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.bluebox {
+    position: absolute;
+    width: 45rem;
+    height: 35rem;
+    background-color: #1E5AFA;
+    border-radius: 2rem;
+    bottom: 23%;
+    left: 32%;
+    z-index: -1;
+}
+
+.abouttext {
+    width: 60%;
+    z-index: 1;
+
+}
+
+.abouttitle {
+    color: #000F37;
+    font-size: 2.7rem;
+}
+
+.abouttext p {
+    color: #575757;
+    font-size: 1.25rem;
+    padding: 2rem 0rem;
+}
+
+.aboutCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 60vw);
+    align-items: center;
+}
+
+.learnmore {
+    color: #000F37;
+    border: 1px solid #000F37;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.lm {
+    border: 1px solid #000F37;
+    border-radius: 1rem;
+}
+
+.learnmore:hover {
+    color: #FAFAFA;
+    background-color: #011037;
+}
+
+#clients {
+    text-align: center;
+}
+
+#clients p {
+    color: #575757;
+}
+
+#testimonials {
+    text-align: center;
+}
+
+#testimonials p {
+    color: #575757;
+}
+
+.logocontainer {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.logocontainer.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.logocontainer img:hover {
+    border: 4px solid #011037;
+    border-radius: 2rem;
+}
+
+.testimonial_container {
+    width: 80%;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.testimonial_card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+    background-color: #FAFAFA;
+    border-radius: 0.5rem;
+}
+
+.testimonial_card:hover {
+    border: 1px solid #011037;
+    background-color: transparent;
+}
+
+.testimonial {
+    color: #5F7285;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.naam {
+    padding: 1rem 1rem;
+}
+
+.naam small {
+    color: #9C9EA3;
+    font-size: 0.75rem;
+}
+
+.aadmi {
+    display: flex;
+    align-items: center;
+}
+
+.enddesign img {
+    margin-top: 5rem;
+    width: 10%;
+}
+
+#faq {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.faqcontainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+}
+
+.faqcard {
+    height: 3rem;
+    padding: 3rem 5rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: start;
+    background-color: #fafafa;
+    gap: 2rem;
+    border-radius: 1rem;
+}
+
+.faqcard:hover {
+    background-color: transparent;
+    border: 1px solid #1E5AFA;
+}
+
+.faqcard img {
+    width: 1.5rem;
+    height: auto;
+}
+
+.answer {
+    display: none;
+    padding: 1rem;
+    color: #5F7285;
+    font-style: italic;
+    font-size: 1rem;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.faqcard.open .answer {
+    display: block;
+}
+
+.faqcard.open .question {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#download {
+    display: grid;
+    width: 80%;
+    margin: 10rem auto;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: left;
+}
+
+.download_text p {
+    margin: 3rem 0rem;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.downloadbuttons2 {
+    display: flex;
+    justify-content: left;
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.downloadimage {
+    position: relative;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+
+.downloadimage.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.downloadbuttons2 a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    font-weight: 400;
+    background-color: black;
+    text-decoration: none;
+    color: #FAFAFA;
+    padding: 10px 15px;
+    border-radius: 1rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.downloadbuttons2 a:hover {
+    transform: scale(1.05);
+}
+
+#subscribe {
+    height: 16rem;
+    padding: 4rem;
+    width: 80%;
+    margin: 1rem auto;
+    background-color: #1E5AFA;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    border-radius: 1rem;
+    color: #FAFAFA;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    bottom: 0%;
+    right: 2%;
+}
+.substext p {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+.getstarted {
+    color: #FAFAFA;
+    border: 1px solid #FAFAFA;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    width: 11rem;
+}
+
+.getstarted:hover {
+    border: 1px solid #011037;
+    color: black;
+}
+
+#copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FAFAFA;
+    background-color: #000F37;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+footer {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    width: 80%;
+    max-width: 1200px;
+    /* Adjust based on your layout */
+
+    margin: 3rem auto;
+    padding: 5rem;
+    gap: 5rem;
+}
+
+footer ul li a {
+    color: #2E2E2E;
+    text-decoration: none;
+    padding: 4rem 0rem;
+}
+
+footer ul li {
+    padding: 0.6rem 0rem;
+}
+
+.fbox h3 {
+    padding: 3rem 0rem;
+    color: #313131;
+}
+
+.footer_1 input {
+    margin-top: 2rem;
+    padding: 0.8rem 0.3rem;
+    background-color: #FAFAFA;
+    border: 1px solid #000F37;
+    border-radius: 0.125rem;
+}
+
+.footer_1 .search {
+    padding: 0.8rem 0.3rem;
+    background-color: transparent;
+    border: 1px solid #000F37;
+    border-radius: 0.125rem;
+}
+
+.footer_1 .search:hover {
+    border: 2px solid #1E5AFA;
+}
+
+@keyframes upDown {
+    from {
+        top: 0%;
+        opacity: 0;
+    }
+
+    to {
+        top: 38%;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    para {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    section {
+        padding-bottom: 8rem;
+    }
+
+    nav {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        margin-left: 2rem;
+        position: relative;
+        left: -95%;
+    }
+
+    nav {
+        width: 100%;
+        position: relative;
+    }
+
+    .logo {
+        margin-left: 2rem;
+        position: relative;
+        left: -95%;
+    }
+
+    .menu {
+        position: fixed;
+        top: -2%;
+        left: -3%;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1E5AFA;
+        box-shadow: 2rem 0 3rem rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem;
+        z-index: 1000;
+        display: none;
+    }
+
+    .menu.open {
+        display: block;
+        scroll-behavior: none;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        padding: 0.5rem 1rem;
+    }
+    nav ul li a:focus{
+        background-color: #FAFAFA;
+        border-radius: 1rem;
+        color: #011037;
+    }
+    .buttons {
+        display: none;
+    }
+
+    nav .btn {
+        display: inline;
+        cursor: pointer;
+        margin-right: 1.4rem;
+        position: fixed;
+        right: 5%;
+        z-index: 1100;
+    }
+
+    nav .btn img {
+        scale: 0.8;
+    }
+
+    nav .btn #close {
+        display: none;
+    }
+
+    /* When nav is open */
+    nav ul.active {
+        display: flex;
+    }
+}
+
+.heroimage {
+    margin-top: 4rem;
+}
+
+.heroimage img {
+    scale: 0.8;
+}
+
+.scrolldown {
+    display: none;
+}
+
+.downloadbuttons {
+    padding-top: 13rem;
+}
+
+.aboutushead {
+    padding: 2rem;
+}
+
+.bluebox {
+    width: 26.25rem;
+    height: 15rem;
+}
+
+.logocontainer {
+    margin: 0rem auto;
+    gap: 0;
+}
+
+/* footer {
+    grid-template-columns: repeat(2,1fr);
+} */
+
+@media (max-width:600px) {
+    html {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .para {
+        width: 94%;
+    }
+
+    .logo {
+        margin-left: 1rem;
+        position: relative;
+        left: -175%;
+    }
+
+    nav .btn {
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+    }
+
+    nav .btn #close {
+        display: none;
+    }
+
+    nav .btn img {
+        scale: 0.4;
+    }
+
+    nav ul {
+        top: -1.8%;
+        width: 100%;
+        height: 100%;
+        left: -2%;
+        align-items: left;
+        justify-content: left;
+        /* display: none; */
+    }
+
+    /* .items{
+        align-items: left;
+        justify-content: left;
+    } */
+    header {
+        height: 35rem;
+    }
+
+    .texthero {
+        top: 36%;
+        margin-bottom: 4rem;
+    }
+
+    .heroimage img {
+        margin-top: 7.5rem;
+        scale: 1.3;
+    }
+
+    .socials {
+        display: none;
+    }
+
+    .aboutushead {
+        font-size: 4rem;
+    }
+
+    .aboutCards {
+        width: 100%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .aboutimage {
+        left: -10%;
+    }
+
+    .bluebox {
+        left: 19%;
+    }
+
+    .abouttext {
+        padding: 0;
+        margin: 0rem 3rem;
+    }
+
+    #clients {
+        margin-top: 3rem;
+    }
+
+    .logocontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonial_container {
+        grid-template-columns: 1fr;
+    }
+
+    #faq {
+        margin-top: 0;
+    }
+
+    #download {
+        padding-top: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .downloadimage {
+        order: -1;
+        margin-left: -5rem;
+        scale: 1.3;
+    }
+
+    .downlaod_text p {
+        padding: 0rem 0rem;
+    }
+
+    .downloadbuttons2 {
+        padding: 1rem auto;
+    }
+
+    .downloadbuttons2 a {
+        gap: 1rem;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 400;
+        border-radius: 1rem;
+    }
+
+    #subscribe {
+        padding: 1rem;
+        height: 20rem;
+        padding: 1rem;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .substext h2 {
+        font-size: 3rem;
+    }
+
+    .substext p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .getstarted {
+        color: #FAFAFA;
+        border: 1px solid #FAFAFA;
+        padding: 1rem 1rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        width: 16rem;
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+    }
+
+}
+@media screen and (max-width:764px) {
+    footer{
+        grid-template-columns: 1.5fr 1fr;
+    }
+}
+@media (max-width:400px) {
+    html {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .para {
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .logo {
+        left: -192%;
+    }
+
+    nav .btn {
+        display: inline;
+        cursor: pointer;
+        position: absolute;
+        right: 5%;
+    }
+
+    nav .btn #close {
+        display: none;
+    }
+
+    nav .btn img {
+        scale: 0.4;
+    }
+
+    nav ul {
+        top: -1.8%;
+        width: 100%;
+        height: 100%;
+        left: -2%;
+        align-items: left;
+        justify-content: left;
+        /* display: none; */
+    }
+
+    /* .items{
+        align-items: left;
+        justify-content: left;
+    } */
+    header {
+        height: 29rem;
+    }
+    .texthero {
+        top: 36%;
+        margin-bottom: 4rem;
+    }
+    .heroimage img {
+        margin-top: 8.5rem;
+        scale: 1.3;
+    }
+    .downloadbuttons{
+        margin: -3rem 2rem;
+        padding: 0.5rem auto;
+    }
+    .downloadbuttons a{
+        padding: 1rem;
+        font-size: 0.5rem;
+    }
+
+    .aboutushead {
+        font-size: 3.5rem;
+    }
+
+    .aboutCards {
+        width: 100%;
+        text-align: left;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        overflow-x: hidden;
+    }
+
+    .aboutimage {
+        left: -10%;
+    }
+
+    .bluebox {
+        left: 14%;
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .abouttext {
+        padding: 0;
+        margin: 0rem 3rem;
+    }
+    .abouttext h2{
+        font-size: 1.8rem;
+    }
+    .abouttext p{
+        font-size: 1rem;
+    }
+    
+
+    .downloadbuttons2 {
+        padding: 0.5rem auto;
+       
+    }
+
+    .downloadbuttons2 a {
+        gap: 1rem;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 400;
+        border-radius: 1rem;
+        font-size: 0.5rem;
+    }
+
+    
+    
+    .fbox h3{
+        font-size: 2rem;
+        margin-bottom: -25px;
+    }
+    .fbox p{
+        color: #2E2E2E;
+    }
+    .substext h2 {
+        font-size: 2rem;
+    }
+
+    .substext p {
+        margin-top: 2rem;
+        font-size: 0.8rem;
+    }
+
+    .getstarted {
+        color: #FAFAFA;
+        border: 1px solid #FAFAFA;
+        padding: 1rem 1rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        width: 16rem;
+    }
+    footer{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    
+}
