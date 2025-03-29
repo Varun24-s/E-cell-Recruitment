@@ -425,6 +425,7 @@ nav ul li a{
 #faq {
     text-align: center;
     margin-top: 6rem;
+    position: relative;
 }
 
 .faqcontainer {
@@ -436,10 +437,14 @@ nav ul li a{
     margin-right: auto;
     margin-top: 5rem;
 }
-
+.bluedeco{
+    position: absolute;
+    left: 0;
+    bottom: -12%;
+}
 .faqcard {
-    height: 3rem;
-    padding: 3rem 5rem;
+    height: auto;
+    padding: 2rem 5rem;
     display: flex;
     text-align: left;
     align-items: center;
@@ -466,8 +471,7 @@ nav ul li a{
     font-style: italic;
     font-size: 1rem;
     animation: fadeIn 0.3s ease-in-out;
-    height: 6rem;
-    padding-top: 1.5rem;
+    height: auto;
 }
 
 .faqcard.open .answer {
@@ -802,6 +806,10 @@ footer ul li {
     .logocontainer {
         margin: 0rem auto;
         gap: 0;
+    }
+
+    .bluedeco{
+        display: none;
     }
     
 }
