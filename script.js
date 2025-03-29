@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 toggleButton.src = "Assets/Icon.png"; 
             } else {
                 toggleButton.src = "Assets/plus.png"; 
-                question.style.animation ="fadeIn 0.3s ease-in-out";
+                question.style.animation ="fadeIn 0.6s ease-in-out";
             }
         });
     });
